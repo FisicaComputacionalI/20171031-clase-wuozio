@@ -1,3 +1,6 @@
+//rocio flores hernandez
+//clase del 31 de octubre
+//promedios de felicidad =)
 #include <iostream>
 using namespace std;
 int main()
