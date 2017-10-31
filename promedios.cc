@@ -5,17 +5,21 @@
 using namespace std;
 int main()
 {
-  int sum=0;
-  int edad[16];
-  for (int i=0; i<16; i++){
-    cout<<"¿que edad tienes?"<<endl;
+    int sum=0;
+    size_t talla=16;
+    cout<<"¿cuantos estudiantes van a terminar de estudiar?"<<endl;
+    cin>>talla;
+    int *edad=new int[talla];
+
+  for (int i=0; i<talla; i++){
+    cout<<"¿que edad tienen?"<<endl;
     cin>>edad[i];
   }
-  for (int j=0; j<16; j++)
+  for (int j=0; j<talla; j++)
     sum+=(edad[j]+3);
-  for (int j=0; j<16; j++)
+  for (int j=0; j<talla; j++)
     cout<<edad [j]<<" , ";
   cout<<endl;
-  cout<<"el promedio de la edad de nuestra felicidad grupal es "<<sum/16<<endl;
+  cout<<"el promedio de la edad de su felicidad es "<<sum/talla<<endl;
   return 0;
 }
